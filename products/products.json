@@ -1,18 +1,130 @@
 {
     "products": [
         {
-            "id": "test",
-            "name": "test item",
-            "image": "../images/pinksquare.jpg",
-            "description": "bla bla bla bla bla bla",
-            "price": "855858€"
+            "id": "ez63",
+            "name": "IQUNIX EZ63",
+            "image": "productimages/ez63.png",
+            "description": "Introducing the EZ Series, featuring true 8000Hz polling rates, effectively reducing keyboard latency to an impressive 0.125ms(theoretical value). Say goodbye to input lag and take control of speed, ensuring the competitive edge you crave. Performance is always more important than anything else for a gaming keyboard. You can be fast, even faster! Why not?",
+            "price": "179€"
         },
         {
-            "id": "test2",
-            "name": "test item",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQzPL1loJgxV0jWHLkHOT0-aVfZakLu6w7dg&s",
-            "description": "bla bla bla bla bla bla",
-            "price": "855858€"
-        }
+            "id": "w60hev2",
+            "name": "Wooting 60HE v2",
+            "image": "productimages/w60hev2.png",
+            "description": "Years of customer feedback, evolving trends and technological advancements pushed us to develop, upgrade and ultimately reinvent our 60HE. The Wooting 60HE v2 is here, with True 8k Polling, an Aluminium Case and a ton of new features and improvements.",
+            "price": "189.50€"
+        },
+        {
+            "id": "q1he",
+            "name": "Keychron Q1 HE QMK",
+            "image": "productimages/q1he.png",
+            "description": "Meet the Q1 HE, the world's first 75% layout wireless QMK custom keyboard equipped with Gateron double-rail magnetic switches and advanced TMR sensors. These magnetic switches and sensors provide a distinct advantage due to their unique mechanism, offering faster feedback, dynamic rapid triggering, and adjustable actuation points, resulting in epic enhancements for the gaming experience tailored to your individual preferences.",
+            "price": "219.99€"
+        },
+        {
+            "id": "jet75he",
+            "name": "MCHOSE Jet 75 Hall Effect Magnetic Switch Gaming Keyboard",
+            "image": "productimages/jet75he.png",
+            "description": "Designed for gamers and creators, the MCHOSE Jet75 redefines performance. With full-powered Kailh magnetic switches, it delivers precision, speed, and adaptability for any task.",
+            "price": "62.17€"
+        },
+        {
+            "id": "vv3pro",
+            "name": "Razer Viper V3 Pro",
+            "image": "productimages/placeholder.png",
+            "description": "The GOAT of all wireless e-sports mice is back to stir up the tournament scene. The Razer Viper V3 Pro has an ultra lightweight design and is still full of the best technologies. It is unrivalled when it comes to optimal performance and handling - your perfect tool, designed by and proven by professionals.",
+            "price": "123.95€"
+        },
+        {
+            "id": "x2crazylight",
+            "name": "X2 CrazyLight Gaming Mouse",
+            "image": "productimages/placeholder.png",
+            "description": "The X2 CrazyLight is a 39g ultra-lightweight gaming mouse designed for fast, precise, and responsive performance. Its lightweight design reduces wrist fatigue, while the 8K polling rate delivers low-latency input for smoother gameplay. Powered by the XS-1 flagship sensor, it supports up to 32,000 DPI, 750 IPS tracking speed, and 50g acceleration for accurate and consistent control. Durable optical switches rated for 100 million clicks ensure reliable long-term performance. Recommended for gamers who want an ultra-light gaming mouse with fast response, precise control, and high-end performance. If you're looking for a lightweight FPS mouse with low latency and accuracy, the X2 CrazyLight is a strong choice.",
+            "price": "129.95€"
+        },
+        {
+            "id": "x2superstrike",
+            "name": "Logitech PRO X2 SUPERSTRIKE",
+            "image": "productimages/placeholder.png",
+            "description": "The PRO X2 SUPERSTRIKE is a breakthrough in the technology for extremely low click latency. The revolutionary Haptic Inductive Trigger System (HITS) accelerates click speed through adjustable actuating and quick release reset points for both main mouse buttons.",
+            "price": "179.99€"
+        },
+        {
+            "id": "np01sv3",
+            "name": "VAXEE NP-01S V3 Wireless (8K)",
+            "image": "productimages/placeholder.png",
+            "description": "The VAXEE NP-01S V3 Wireless (8K) is a high-performance e-sports gaming mouse designed for maximum tracking precision. It retains VAXEE's signature asymmetric hybrid shape while introducing their 3rd-generation wireless architecture.",
+            "price": "169.99€"
+        },
+        {
+            "id": "zen2",
+            "name": "PMM Viper V3 Pro ZEN 2.0 Mod",
+            "image": "productimages/placeholder.png",
+            "description": "The ZEN 8K is inspired by the Viper V3 Pro but reduced in weight by 44%.",
+            "price": "214€"
+        },
+        {
+            "id": "pulse2",
+            "name": "PMM OP1 8K PULSE 2.0 Mod",
+            "image": "productimages/placeholder.png",
+            "description": "The shape is as close as it can get to the OP1 8K shape. The PULSE comes with a tension system that allows you to calibrate the click feel with a turn of a screw.",
+            "price": "159€"
+        },
+        {
+            "id": "chu2",
+            "name": "MOONDROP CHU II In-Ear Monitor",
+            "image": "productimages/placeholder.png",
+            "description": "The Moondrop Chu 2 delivers exceptional audio quality at an unbeatable price point, featuring a refined 10mm dynamic driver tuned for a natural, detailed sound signature. Its ergonomic resin shell and interchangeable filter system let you tailor the listening experience to your preferences, while the detachable cable adds long-term reliability. Whether you're a seasoned audiophile or just stepping into the world of hi-fi, the Chu 2 sets a new benchmark for what budget in-ear monitors can achieve.",
+            "price": "23€"
+        },
+        {
+            "id": "hexa",
+            "name": "TRUTHEAR HEXA In-ear Monitor",
+            "image": "productimages/placeholder.png",
+            "description": "The Truthear Hexa is a premium hybrid in-ear monitor featuring one dynamic driver and three balanced armature drivers, engineered to deliver a remarkably balan…The Truthear Hexa is a premium hybrid in-ear monitor featuring one dynamic driver and three balanced armature drivers, engineered to deliver a remarkably balanced and resolving sound across the entire frequency range. Designed in collaboration with renowned audio reviewer Crinacle, it combines deep, textured bass with crisp highs and an impressively wide soundstage. Built with a lightweight, comfortable shell and a high-quality detachable cable, the Hexa offers a listening experience that punches well above its price class.",
+            "price": "89.99€"
+        },
+        {
+            "id": "zneo8k",
+            "name": "HM Lab - Z-NEO 8K USB GAMING HUB ",
+            "image": "productimages/placeholder.png",
+            "description": "Z-Neo 8K Gaming Hub by HM Lab is a high-performance gamer hub built with a durable aluminum alloy and acrylic chassis. Featuring 8K polling rate support, it delivers ultra-fast responsiveness for competitive gaming. Its standout feature is a customizable display with an integrated Web Hub, allowing you to show system stats, GIFs, slideshows, or animated themes directly on your desk. With an independent power supply, USB 2.0 HighSpeed connection, and 77-frame onboard memory for smooth animations, Z-Neo 8K combines performance, stability, and personalization in one sleek device.",
+            "price": "30.99€"
+        },
+        {
+            "id": "artisanzero",
+            "name": "ARTISAN NINJA FX ZERO SOFT DAIDAI ORANGE",
+            "image": "productimages/placeholder.png",
+            "description": "Zero is a versatile and easy-to-handle gaming mousepad that can be paired with a variety of different set up, and is loved by top professional players.",
+            "price": "37.99€"
+        },
+        {
+            "id": "es2",
+            "name": "ES2 eSports Mousepad 3mm L~XL (Medium Speed)",
+            "image": "productimages/placeholder.png",
+            "description": "Designed for competitive-level eSports, the eS-2 mousepad boasts a heat-treated knitted poly fabric surface, ensuring an even glide and friction. The newly developed alpha cell base material provides excellent stopping power and cushioning, enhancing your gaming experience. With minimized yet extremely durable edge stitching, this mousepad is built to last. It comes in various sizes and thicknesses to cater to your specific needs. The eS-2 mousepad delivers initial friction, medium to high glide speed, and good stopping power, making it a top choice for serious gamers.",
+            "price": "29.99€"
+        },
+        {
+            "id": "rogmonitor",
+            "name": "ROG Swift OLED PG27AQWP-W",
+            "image": "productimages/placeholder.png",
+            "description": "The ROG Swift OLED PG27AQWP-W is a 27-inch gaming monitor powered by a cutting-edge tandem OLED panel, capable of an extraordinary 540Hz at 1440p and up to 720Hz at 720p — pushing the boundaries of competitive gaming displays. Tandem OLED technology stacks two OLED layers for significantly higher brightness than traditional OLED while preserving perfect blacks and near-infinite contrast. Paired with a 0.03ms response time and ASUS ROG's suite of display enhancements, it's built for players who refuse to compromise between image quality and raw performance.",
+            "price": "914€"
+        },
+        {
+            "id": "p8",
+            "name": "ARTISAN MIZUGUMO FUTAE-P8",
+            "image": "productimages/placeholder.png",
+            "description": "The Artisan Mizugumo Futae P8 are premium dot mouse skates engineered for gamers who demand both speed and consistency. Crafted from high-performance Duracon® POM, they feature a unique dual multi-curve design — rounded edges combined with a subtly curved contact surface — that maintains a uniform glide even under uneven downforce or on softer cloth pads. Each pack includes 16 universal 8mm skates with a strong single-adhesive backing, making installation clean and hassle-free. If you're chasing that perfectly smooth, snag-free mouse movement, the Futae P8 is a serious upgrade.",
+            "price": "12.47€"
+        },
+        {
+            "id": "tigerice",
+            "name": "ICE V2 Mouse Skates - Universal - DIY Dots",
+            "image": "productimages/placeholder.png",
+            "description": "Achieve effortless glide and precision with Ice V2 Mouse Skates, made from premium PTFE with 2.5D edges, anti-collapse support, and secure 3M adhesive for smooth, stable performance.",
+            "price": "8€"
+        },
     ]
 }
