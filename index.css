@@ -65,9 +65,10 @@ a {
 }
 
 .articles {
-    background-color: red;
-    margin-top: 5rem;
     padding: 0 2rem;
+    margin: 5rem auto 0 auto;
+    width: 90%;
+    max-width: 90rem;
     display: flex;
     justify-content: center;
     gap: 2.5rem;
@@ -75,13 +76,21 @@ a {
 }
 
 .article {
-    background-color: blue;
-    width: 40rem;
-    height: 40rem;
+    background-color: #d5d5d5;
+    width: 100%;
+    max-width: 40rem;
+    aspect-ratio: 1 / 1;
     padding: 1rem;
     border-radius: 0.75rem;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
+    transition: all 100ms ease-in-out;
+}
+
+.article:hover {
+    transform: scale(1.025);
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.5);
 }
 
 .article h1 {
@@ -97,4 +106,51 @@ a {
     background-color: #b7b7b7;
     width: 1px;
     border-radius: 1rem;
+}
+
+.recommendations {
+    padding: 0 2rem;
+    margin: 5rem auto 0 auto;
+    width: 90%;
+    max-width: 90rem;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+#allproducts {
+    grid-column: 1 / -1;
+    text-decoration: underline;
+}
+
+.recommendation {
+    background-color: #d5d5d5;
+    width: 100%;
+    max-width: 20rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.75rem;
+    padding-left: 1.25rem;
+    padding-bottom: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
+    transition: all 100ms ease-in-out;
+    align-items: flex-start;
+}
+
+.recommendation:hover {
+    transform: scale(1.025);
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.5);
+}
+
+.recommendation img {
+    height: auto;
+    max-height: 60%;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.recommendation a {
+    margin-top: auto;
+    text-decoration: underline;
 }
