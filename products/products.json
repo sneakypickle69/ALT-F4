@@ -1,0 +1,18 @@
+{
+    "products": [
+        {
+            "id": "test",
+            "name": "test item",
+            "image": "../images/pinksquare.jpg",
+            "description": "bla bla bla bla bla bla",
+            "price": "855858€"
+        },
+        {
+            "id": "test2",
+            "name": "test item",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQzPL1loJgxV0jWHLkHOT0-aVfZakLu6w7dg&s",
+            "description": "bla bla bla bla bla bla",
+            "price": "855858€"
+        }
+    ]
+}

@@ -68,7 +68,6 @@ a {
     padding: 0 2rem;
     margin: 5rem auto 0 auto;
     width: 90%;
-    max-width: 90rem;
     display: flex;
     justify-content: center;
     gap: 2.5rem;
@@ -78,8 +77,8 @@ a {
 .article {
     background-color: #d5d5d5;
     width: 100%;
-    max-width: 40rem;
-    aspect-ratio: 1 / 1;
+    max-width: 50rem;
+    max-height: 30rem;
     padding: 1rem;
     border-radius: 0.75rem;
     display: flex;
@@ -100,6 +99,12 @@ a {
 .article img {
     display: block;
     margin: auto auto 0 auto;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* contain damit es rein passt, cover damit es cropped */
+    border-radius: 0.75rem;
+    overflow: hidden;
 }
 
 #linebreak {
@@ -108,9 +113,17 @@ a {
     border-radius: 1rem;
 }
 
+#line {
+    background-color: #b7b7b7;
+    height: 1px;
+    width: 100%;
+    max-width: 100rem;
+    margin: 3rem auto 0 auto;
+}
+
 .recommendations {
     padding: 0 2rem;
-    margin: 5rem auto 0 auto;
+    margin: 3rem auto 0 auto;
     width: 90%;
     max-width: 90rem;
     display: grid;
@@ -130,7 +143,7 @@ a {
     aspect-ratio: 1 / 1;
     border-radius: 0.75rem;
     padding-left: 1.25rem;
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
@@ -148,6 +161,7 @@ a {
     max-height: 60%;
     object-fit: contain;
     margin-bottom: 0.5rem;
+    border-radius: 0.75rem;
 }
 
 .recommendation a {
