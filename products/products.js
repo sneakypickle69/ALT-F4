@@ -8,7 +8,7 @@ fetch("products.json")
 
         if (!product) {
             document.title = "Product not found";
-            document.getElementById("product-container").innerHTML = "<p>Product not found.</p>";
+            document.getElementsByClassName("product").innerHTML = "<p>Product not found.</p>";
             return;
         }
 

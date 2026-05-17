@@ -1,0 +1,5 @@
+So, 17.5.26: Produkt Seite fertig, Homepage empfohlene Items hinzufügen
+Mo, 18.5.26: Shop Seite fertig (alle Produkte), Homepage Berichte schreiben
+Di, 19.5.26: Support Seite fertig, Warenkorb seite (einfach sagen leer) & final checks
+Mi, 20.5.26: Falls nötig, final final check
+Do, 21.5.26: Abgabe

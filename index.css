@@ -80,7 +80,6 @@ a {
     max-width: 50rem;
     max-height: 30rem;
     padding: 1rem;
-    border-radius: 0.75rem;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
@@ -88,7 +87,6 @@ a {
 }
 
 .article:hover {
-    transform: scale(1.025);
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -103,14 +101,12 @@ a {
     height: auto;
     object-fit: contain;
     /* contain damit es rein passt, cover damit es cropped */
-    border-radius: 0.75rem;
     overflow: hidden;
 }
 
 #linebreak {
     background-color: #b7b7b7;
     width: 1px;
-    border-radius: 1rem;
 }
 
 #line {
@@ -141,7 +137,6 @@ a {
     width: 100%;
     max-width: 20rem;
     aspect-ratio: 1 / 1;
-    border-radius: 0.75rem;
     padding-left: 1.25rem;
     padding-bottom: 0.5rem;
     display: flex;
@@ -149,22 +144,32 @@ a {
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
     transition: all 100ms ease-in-out;
     align-items: flex-start;
+    overflow: hidden;
 }
 
 .recommendation:hover {
-    transform: scale(1.025);
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.5);
 }
 
-.recommendation img {
-    height: auto;
-    max-height: 60%;
-    object-fit: contain;
-    margin-bottom: 0.5rem;
-    border-radius: 0.75rem;
+.noimgzoom {
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+    flex-shrink: 0
 }
 
-.recommendation a {
+.noimgzoom img {
+    width: 100%;
+    height: 100%;
+    transition: transform 200ms ease-in-out;
+    object-fit: cover;
+}
+
+.recommendation:hover .noimgzoom img {
+    transform: scale(1.1);
+}
+
+.recommendation p {
     margin-top: auto;
     text-decoration: underline;
 }
