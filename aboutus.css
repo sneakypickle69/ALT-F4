@@ -66,8 +66,31 @@ a {
 }
 
 .aboutus {
-    background-color: red;
-    margin-top: 10rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+    margin: 5rem auto 0 auto;
+}
+
+#shipping {
+    margin-top: 4rem;
+    width: 100%;
+    max-width: 50rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td, th {
+    border: 1px solid black;
+    padding: 12px 12px;
+    text-align: left;
+}
+
+#spacewaste {
+    width: 100%;
+    height: 5rem;
 }

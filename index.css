@@ -154,3 +154,8 @@ a {
     margin-top: auto;
     text-decoration: underline;
 }
+
+#spacewaste {
+    width: 100%;
+    height: 5rem;
+}
