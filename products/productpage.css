@@ -78,6 +78,7 @@ a {
     grid-template-rows: auto auto 1fr auto auto;
     gap: 3rem;
     margin: 5rem auto 0 auto;
+    width: 80%;
     max-width: 80rem;
     display: grid;
     align-items: end;

@@ -61,74 +61,6 @@ a {
     height: auto;
 }
 
-.articles {
-    padding: 0 2rem;
-    margin: 5rem auto 0 auto;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    flex-wrap: wrap;
-}
-
-.article {
-    background-color: #d5d5d5;
-    width: 100%;
-    max-width: 50rem;
-    max-height: 30rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
-    transition: all 100ms ease-in-out;
-}
-
-.article:hover {
-    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.5);
-}
-
-.article h1 {
-    margin: 0;
-}
-
-.article img {
-    display: block;
-    margin: auto auto 0 auto;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    /* contain damit es rein passt, cover damit es cropped */
-    overflow: hidden;
-}
-
-#linebreak {
-    background-color: #b7b7b7;
-    width: 1px;
-}
-
-#line {
-    background-color: #b7b7b7;
-    height: 1px;
-    width: 100%;
-    max-width: 100rem;
-    margin: 3rem auto 0 auto;
-}
-
-.recommendations {
-    padding: 0 2rem;
-    margin: 3rem auto 0 auto;
-    width: 90%;
-    max-width: 90rem;
-    display: grid;
-    gap: 2.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-}
-
-#allproducts {
-    grid-column: 1 / -1;
-    text-decoration: underline;
-}
-
 .recommendation {
     background-color: #d5d5d5;
     width: 100%;
@@ -136,11 +68,16 @@ a {
     aspect-ratio: 1 / 1;
     padding-left: 1.25rem;
     padding-bottom: 0.5rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas: 
+    "product-name"
+    "product-image"
+    "product-price"
+    "view-button";
+    grid-template-rows: auto 1fr auto auto;
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
     transition: all 100ms ease-in-out;
-    align-items: flex-start;
+    align-items: start;
     overflow: hidden;
 }
 
@@ -149,10 +86,10 @@ a {
 }
 
 .noimgzoom {
+    grid-area: product-image;
     width: 60%;
-    height: 60%;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
-    flex-shrink: 0
 }
 
 .noimgzoom img {
@@ -166,12 +103,33 @@ a {
     transform: scale(1.1);
 }
 
-.recommendation p {
-    margin-top: auto;
+.product-price {
+    grid-area: product-price;
+}
+
+.view-button {
+    grid-area: view-button;
     text-decoration: underline;
+}
+
+.recommendation h3 {
+    grid-area: product-name;
+}
+
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 3rem auto 0 auto;
+}
+
+#title {
+    text-align: center;
+    margin-top: 3rem;
 }
 
 #spacewaste {
     width: 100%;
-    height: 5rem;
+    height: 2rem;
 }
