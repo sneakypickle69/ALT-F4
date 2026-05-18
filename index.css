@@ -91,6 +91,10 @@ a {
     margin: 0;
 }
 
+.article h2 {
+    margin: 0;
+}
+
 .article img {
     display: block;
     margin: auto auto 0 auto;
