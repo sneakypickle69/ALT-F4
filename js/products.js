@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const productId = params.get("id");
 
-fetch("products.json")
+fetch("../json/products.json")
     .then(res => res.json())
     .then(data => {
         const product = data.products.find(p => p.id === productId);
