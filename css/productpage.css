@@ -114,7 +114,7 @@ a {
 #product-description {
     grid-area: product-description;
     align-self: end;
-    margin-top: -4rem;
+    margin-top: -1rem;
 }
 
 #buybutton {
@@ -141,4 +141,10 @@ a {
 #buybutton:active {
     transform: scale(0.97);
     background-color: #333333;
+}
+
+.dataprivacy {
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 2rem;
 }

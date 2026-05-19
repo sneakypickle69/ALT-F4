@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="../favicon.png?v=2">
 </head>
 <body>
-    <nav class="navbar">
+    <header class="navbar">
         <div class="logo">
             <a href="../index.html">
                 <p>ALT F4</p>
@@ -28,17 +28,27 @@
             <div class="basket">
                 <img src="../images/Shopping-Basket.png">
             </div>
-    </nav>
-        <script src="../js/products.js"></script>
-        <div class="product">
+    </header>
+
+    <main>
+        <article class="product">
             <img id="product-image" src="" alt="">
             <h2 id="product-name"></h2>
             <p id="product-price"></p>
             <div id="buybutton">
                 <p>Add to cart</p>
             </div>
-            <h3 id="desctitle">Description</h3>
-            <p id="product-description"></p>
-    </div>
+            <section>
+                <h3 id="desctitle">Description</h3>
+                <p id="product-description"></p>
+            </section>
+        </article>
+    </main>
+
+    <script src="../js/products.js"></script>
+
+    <footer class="dataprivacy">
+        <a href="dataprivacy.html">Data privacy</a>
+    </footer>
 </body>
 </html>

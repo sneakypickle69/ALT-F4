@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/review.css">
 </head>
 <body>
-    <nav class="navbar">
+    <header class="navbar">
         <div class="logo">
             <a href="../index.html">
                 <p>ALT F4</p>
@@ -28,19 +28,25 @@
             <div class="basket">
                 <img src="../images/Shopping-Basket.png">
             </div>
-    </nav>
+    </header>
 
-    <div id="product-container">
-        <div class="image">
-            <img id="review-image">
-        </div>
-        <div class="reviewbody">
-            <h1 id="review-title"></h1>
-            <p id="review"></p>
-        </div>
-    </div>
+    <main>
+        <article id="product-container">
+            <div class="image">
+                <img id="review-image">
+            </div>
+            <section class="reviewbody">
+                <h1 id="review-title"></h1>
+                <p id="review"></p>
+            </section>
+        </article>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="../js/review.js"></script>
+
+    <footer class="dataprivacy">
+        <a href="dataprivacy.html">Data privacy</a>
+    </footer>
 </body>
 </html>

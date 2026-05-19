@@ -80,3 +80,9 @@ a {
     width: 40%;
     margin: 0 auto;
 }
+
+.dataprivacy {
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 2rem;
+}
