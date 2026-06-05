@@ -95,3 +95,8 @@ th, td, th {
     text-align: center;
     margin-top: 2rem;
 }
+
+#storeMap {
+    display: flex;
+    align-items: center;
+}

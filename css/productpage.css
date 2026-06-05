@@ -50,7 +50,7 @@ a {
 .navlinks {
     display: flex;
     gap: 1.75rem;
-    letter-spacing: -0.025rem;
+    letter-spacing: -0.025rem;  
 
     justify-self: center;
 
