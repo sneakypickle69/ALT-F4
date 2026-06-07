@@ -53,6 +53,7 @@ a {
     letter-spacing: -0.025rem;
 
     justify-self: center;
+
 }
 
 .basket {
@@ -62,24 +63,6 @@ a {
 .basket img {
     width: 1.75rem;
     height: auto;
-}
-
-.dataprivacy {
-    text-decoration: underline;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.helppage {
-    width: 60%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-.support2 {
-    margin-top: 2rem;
 }
 
 #profile {
@@ -100,6 +83,36 @@ a {
     display: flex;
 }
 
-#activePage {
-    text-decoration: underline;
+#content {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    align-items: center;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+#inputs {
+    margin-top: 1rem;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    gap: 1rem;
+    max-width: 50%;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+}  
+
+#inputs > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#captchaImg {
+    width: 10rem;
+    margin-bottom: 1rem;
 }

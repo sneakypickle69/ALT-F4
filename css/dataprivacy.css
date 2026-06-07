@@ -73,3 +73,21 @@ a {
     margin: 2rem auto;
     padding: 1rem;
 }
+
+#profile {
+    height: fit-content;
+    width: fit-content;
+    margin-right: 8px;
+}
+
+#profile img {
+    width: 1.75rem;
+    height: auto;
+    border: 0.1rem solid #7e7d7d;
+    border-radius: 100%;
+}
+
+#profileBasket {
+    justify-content: end;
+    display: flex;
+}

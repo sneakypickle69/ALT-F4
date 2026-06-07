@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALT F4 - profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <p>ALT F4</p>
+            </a>
+        </div>
+        <nav class="navlinks">
+            <a href="allproducts.html">SHOP</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="support.html">SUPPORT</a>
+        </nav>
+        <div id="profileBasket">
+            <div id="profile">
+                <a href="profile.html">
+                    <img src="../images/profile-picture.png" alt="user profile">
+                </a>
+            </div>
+            <div class="basket">
+                <img src="../images/Shopping-Basket.png" alt="shopping basket">
+            </div>
+        </div>
+    </header>
+
+    <main id="content">
+        <h2>Profile</h2>
+
+        <form id="inputs" action="https://gibm.becknet.ch/formular/formular.php" method="post">
+            <div>
+                <label for="usernameInput">Username *</label>
+                <input type="text" name="usernameInput" id="usernameInput" minlength="4" maxlength="25" autofocus required placeholder="JohnTheKing">
+            </div>
+
+            <div>
+                <label for="emailInput">E-Mail *</label>
+                <input type="email" name="emailInput" id="emailInput" placeholder="john.doe@mail.com" required></input>
+            </div>
+
+            <div>
+                <label for="passwordInput">Password *</label>
+                <input type="password" name="passwordInput" id="passwordInput" required minlength="6" maxlength="30">
+            </div>
+
+            <div>
+                <label for="birthdayInput">Birth Date *</label>
+                <input type="date" name="birthdayInput" required min="1900-01-01" max="2026-07-31">
+            </div>
+
+            <div>
+                <label for="genderInput">Gender *</label>
+                <div id="flexRow">
+                    <input type="radio" name="genderInput" id="female" value="Female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="genderInput" id="male" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="genderInput" id="other" value="Other" required>
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            
+            <div>
+                <label for="phoneInput">Phone Number</label>
+                <input type="tel" id="phoneInput" name="phoneInput" placeholder="079 754 83 91">
+            </div>
+
+            <div>
+                <label for="bioInput">Biography</label>
+                <textarea type="" id="bioInput" name="bioInput" placeholder="Hello! I am John Doe, welcome to my profile!..." maxlength="200" rows="5" cols="33"></textarea>
+            </div>
+
+            <div>
+                <label for="countryInput">Country</label>
+                <select name="countryInput" id="countryInput">
+                    <option disabled selected value="">--Select--</option>
+                    <option value="switzerland">Switzerland</option>
+                    <option value="france">France</option>
+                    <option value="germany">Germany</option>
+                    <option value="italy">Italy</option>
+                    <option value="austria">Austria</option>
+                    <option value="belgium">Belgium</option>
+                    <option value="netherlands">Netherlands</option>
+                    <option value="spain">Spain</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="czech-republic">Czech Republic</option>
+                    <option value="poland">Poland</option>
+                    <option value="sweden">Sweden</option>
+                    <option value="greece">Greece</option>
+                    <option value="croatia">Croatia</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="discordInput">Discord</label>
+                <input type="url" name="discordInput" id="discordInput" placeholder="https://discord.com/users/account_id" pattern="https://.*discord\.com/users/.*">
+            </div>
+
+            <div class="flexRow">
+                <label for="newsInput">Would you like to sign up for our news letter featuring the newest products and discounts?</label>
+                <input type="checkbox" id="newsInput" name="newsInput">
+            </div>
+            <div class="flexRow">
+                <label for="termsInput">Do you accept the terms of use? *</label>
+                <input type="checkbox" id="termsInput" name="termsInput" required>
+            </div>
+
+            <div>
+                <img id="captchaImg" src="../images/captcha.png" alt="captcha">
+                <label for="captchaInput">Please input the captcha here *</label>
+                <input name="captchaInput" id="captchaInput" type="text" pattern="CAPTCHA" required>
+            </div>
+
+            <div class="flexRow">
+                <input type="submit" id="submitInput" name="submitInput" value="Submit" >
+                <input type="reset" id="resetInput" name="resetInput" value="Reset">
+            </div>
+        </section>
+    </main>
+</body>
+</html>

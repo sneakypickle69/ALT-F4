@@ -51,9 +51,8 @@ a {
     display: flex;
     gap: 1.75rem;
     letter-spacing: -0.025rem;
-
+    align-items: center;
     justify-self: center;
-
 }
 
 .basket {
@@ -99,4 +98,26 @@ th, td, th {
 #storeMap {
     display: flex;
     align-items: center;
+}
+
+#profile {
+    height: fit-content;
+    width: fit-content;
+    margin-right: 8px;
+}
+
+#profile img {
+    width: 1.75rem;
+    height: auto;
+    border: 0.1rem solid #7e7d7d;
+    border-radius: 100%;
+}
+
+#profileBasket {
+    justify-content: end;
+    display: flex;
+}
+
+#activePage {
+    text-decoration: underline;
 }
