@@ -82,6 +82,10 @@ a {
     margin-top: 2rem;
 }
 
+.support2 a {
+    text-decoration: underline;
+}
+
 #profile {
     height: fit-content;
     width: fit-content;

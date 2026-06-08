@@ -95,9 +95,11 @@ th, td, th {
     margin-top: 2rem;
 }
 
-#storeMap {
+.extraInfo {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
 }
 
 #profile {
