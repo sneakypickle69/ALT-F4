@@ -31,7 +31,7 @@
     </header>
 
     <main id="content">
-        <h2>Profile</h2>
+        <h1>Profile</h1>
 
         <form id="inputs" action="https://gibm.becknet.ch/formular/formular.php" method="post">
             <div>
@@ -41,7 +41,7 @@
 
             <div>
                 <label for="emailInput">E-Mail *</label>
-                <input type="email" name="emailInput" id="emailInput" placeholder="john.doe@mail.com" required></input>
+                <input type="email" name="emailInput" id="emailInput" placeholder="john.doe@mail.com" required>
             </div>
 
             <div>
@@ -51,19 +51,20 @@
 
             <div>
                 <label for="birthdayInput">Birth Date *</label>
-                <input type="date" name="birthdayInput" required min="1900-01-01" max="2026-07-31">
+                <input type="date" id="birthdayInput" name="birthdayInput" required min="1900-01-01" max="2026-07-31">
             </div>
 
             <div>
-                <label for="genderInput">Gender *</label>
-                <div id="flexRow">
+                <label for="female">Gender *</label>
+                <fieldset>
+                    <legend>Choose your gender:</legend>
                     <input type="radio" name="genderInput" id="female" value="Female" required>
                     <label for="female">Female</label>
                     <input type="radio" name="genderInput" id="male" value="Male" required>
                     <label for="male">Male</label>
                     <input type="radio" name="genderInput" id="other" value="Other" required>
                     <label for="other">Other</label>
-                </div>
+                </fieldset>
             </div>
             
             <div>
@@ -73,7 +74,7 @@
 
             <div>
                 <label for="bioInput">Biography</label>
-                <textarea type="" id="bioInput" name="bioInput" placeholder="Hello! I am John Doe, welcome to my profile!..." maxlength="200" rows="5" cols="33"></textarea>
+                <textarea id="bioInput" name="bioInput" placeholder="Hello! I am John Doe, welcome to my profile!..." maxlength="200" rows="5" cols="33"></textarea>
             </div>
 
             <div>
@@ -102,6 +103,11 @@
                 <input type="url" name="discordInput" id="discordInput" placeholder="https://discord.com/users/account_id" pattern="https://.*discord\.com/users/.*">
             </div>
 
+            <div>
+                <label for="youtubeInput">Youtube (not available yet)</label>
+                <input type="url" name="youtubeInput" id="youtubeInput" placeholder="https://youtube.com/username" pattern="https://.*youtube.com/.*" readonly>
+            </div>
+
             <div class="flexRow">
                 <label for="newsInput">Would you like to sign up for our news letter featuring the newest products and discounts?</label>
                 <input type="checkbox" id="newsInput" name="newsInput">
@@ -118,10 +124,10 @@
             </div>
 
             <div class="flexRow">
-                <input type="submit" id="submitInput" name="submitInput" value="Submit" >
+                <input type="submit" id="submitInput" name="submitInput" value="Submit">
                 <input type="reset" id="resetInput" name="resetInput" value="Reset">
             </div>
-        </section>
+        </form>
     </main>
 </body>
 </html>
