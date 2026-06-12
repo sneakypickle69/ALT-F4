@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-#activePage {
+.activePage {
     text-decoration: underline;
 }
 
@@ -69,12 +69,12 @@ a {
         }
     }
 
-    & #profileBasket {
+    & .profileBasket {
         justify-content: end;
         display: flex;
     }
 
-    & #profile {
+    & .profile {
         height: fit-content;
         width: fit-content;
         margin-right: 8px;
