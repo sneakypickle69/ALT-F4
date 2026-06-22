@@ -1,7 +1,6 @@
 .recommendation {
     background-color: var(--bg-card);
     width: 100%;
-    max-width: 20rem;
     aspect-ratio: 1 / 1;
     padding-left: 1.25rem;
     padding-bottom: 0.5rem;
@@ -54,11 +53,11 @@
 }
 
 #products-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
     gap: 2rem;
-    justify-content: center;
     margin: 3rem auto 0 auto;
+    padding: 0 1rem;
 }
 
 #title {
@@ -74,12 +73,6 @@
 
 @media (max-width: 670px) {
     #products-container {
-        display: grid;
         grid-template-columns: 1fr;
-        padding: 0 1rem;
-        width: 100%;
-    }
-    .recommendation {
-        max-width: 100%;
     }
 }
