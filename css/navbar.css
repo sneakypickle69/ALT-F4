@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
 :root {
     --bg-main: #e1e1e1;
@@ -7,11 +7,21 @@
     --shadow-hover: rgba(0, 0, 0, 0.5);
     --lines: #b7b7b7;
     --profile-border: #7e7d7d;
+    --buy-button: #333333;
+    --buy-button-hover: #1f1f1f;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: var(--bg-main);
-    font-family: JetBrains Mono, monospace;
+    font-family:
+        JetBrains Mono,
+        monospace;
 }
 
 a {
@@ -58,6 +68,10 @@ a {
         letter-spacing: -0.025rem;
         align-items: center;
         justify-self: center;
+
+        & a {
+            padding: 0.5rem 0.4rem;
+        }
     }
 
     & .basket {
@@ -85,5 +99,52 @@ a {
             border: 0.1rem solid var(--profile-border);
             border-radius: 100%;
         }
+        & p {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "logo profileBasket"
+            "navlinks navlinks";
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .navlinks {
+        grid-area: navlinks;
+        justify-content: center;
+        padding: 0.5rem 0;
+        border-top: 1px solid var(--lines);
+        gap: 1.25rem;
+    }
+
+    .profileBasket {
+        grid-area: profileBasket;
+        justify-self: end;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        margin: 0 auto;
+    }
+
+    .navbar .logo p {
+        font-size: 1.8rem;
+        letter-spacing: -0.15rem;
+    }
+
+    .navlinks {
+        gap: 0.75rem;
+        font-size: 0.85rem;
+        letter-spacing: 0;
     }
 }

@@ -6,7 +6,7 @@
     padding-left: 1.25rem;
     padding-bottom: 0.5rem;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "product-name"
     "product-image"
     "product-price"
@@ -70,4 +70,26 @@
     text-decoration: underline;
     text-align: center;
     margin-top: 2rem;
+}
+
+@media (max-width: 670px) {
+    #products-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1rem;
+        width: 100%;
+    }
+    .recommendation {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    #products-container {
+        grid-template-columns: 1fr;
+    }
+    .recommendation {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
