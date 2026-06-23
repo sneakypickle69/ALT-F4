@@ -26,6 +26,10 @@
     background-color: white;
 }
 
+#countryInput {
+    cursor: pointer;
+}
+
 #bioInput {
     height: 5rem;
 }
@@ -44,6 +48,21 @@
 #captchaImg {
     width: 10rem;
     margin-bottom: 1rem;
+}
+
+.dataprivacy {
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#submitInput, #resetInput {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#resetInput {
+    margin-left: 1rem;
 }
 
 @media (max-width: 1024px) {
