@@ -56,7 +56,7 @@
     margin-top: 2rem;
 }
 
-#submitInput, #resetInput {
+#submitInput, #resetInput, #termsInput, #newsInput {
     cursor: pointer;
     border: 1px solid black;
 }
