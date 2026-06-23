@@ -1,7 +1,7 @@
 .product {
     border: 1px solid var(--product-border);
     background-color: var(--product-bg);
-    grid-template-areas: 
+    grid-template-areas:
     "product-image product-name"
     "product-image product-price"
     "product-image buybutton"
@@ -10,9 +10,8 @@
     grid-template-columns: 1.4fr 1fr;
     grid-template-rows: auto auto 1fr auto auto;
     gap: 3rem;
-    margin: 5rem auto 0 auto;
-    width: 80%;
-    max-width: 80rem;
+    margin: 3rem auto 0 auto;
+    max-width: 80%;
     display: grid;
     align-items: end;
     padding: 1rem;
@@ -22,8 +21,10 @@
     grid-area: product-image;
     grid-area: product-image;
     width: 100%;
-    height: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
+    margin: auto 0;
 }
 
 #product-name {
@@ -47,7 +48,7 @@
 #product-description {
     grid-area: product-description;
     align-self: end;
-    margin-top: -1rem;
+    margin-top: -4rem;
 }
 
 #buybutton {
@@ -80,4 +81,63 @@
     text-decoration: underline;
     text-align: center;
     margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .product {
+        grid-template-areas:
+        "product-image product-name"
+        "product-image product-price"
+        "product-image buybutton"
+        "desctitle desctitle"
+        "product-description product-description";
+        gap: 1rem;
+    }
+    #desctitle, #product-description {
+        align-self: start;
+        margin-top: 0rem;
+    }
+    #product-description {
+        margin-top: -2rem;
+    }
+    #product-price {
+        margin-top: -1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "product-image"
+        "product-name"
+        "product-price"
+        "buybutton"
+        "desctitle"
+        "product-description";
+        max-width: 90%;
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
+    #product-image {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #product-name {
+        margin-top: -1rem;
+    }
+    #buybutton {
+        margin-top: -1rem;
+    }
+    #product-description {
+        margin-top: -3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .product {
+        margin-top: 0;
+        max-width: 100%;
+    }
 }

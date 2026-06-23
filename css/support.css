@@ -9,7 +9,7 @@
 }
 
 .helppage {
-    width: 60%;
+max-width: 60%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -18,4 +18,18 @@
 
 .support2 {
     margin-top: 2rem;
+}
+
+@media (max-width: 1300px) {
+    .helppage {
+max-width: 75%;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 832px) {
+    .helppage {
+max-width: 90%;
+        margin: 0 auto;
+    }
 }

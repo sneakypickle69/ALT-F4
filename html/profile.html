@@ -39,22 +39,22 @@
         <form id="inputs" action="https://gibm.becknet.ch/formular/formular.php" method="post">
             <div>
                 <label for="usernameInput">Username *</label>
-                <input type="text" name="usernameInput" id="usernameInput" minlength="4" maxlength="25" autofocus required placeholder="JohnTheKing">
+                <input type="text" class="textinputs" name="usernameInput" id="usernameInput" minlength="4" maxlength="25" autofocus required placeholder="JohnTheKing">
             </div>
 
             <div>
                 <label for="emailInput">E-Mail *</label>
-                <input type="email" name="emailInput" id="emailInput" placeholder="john.doe@mail.com" required>
+                <input type="email" class="textinputs" name="emailInput" id="emailInput" placeholder="john.doe@mail.com" required>
             </div>
 
             <div>
                 <label for="passwordInput">Password *</label>
-                <input type="password" name="passwordInput" id="passwordInput" required minlength="6" maxlength="30">
+                <input type="password" class="textinputs" name="passwordInput" id="passwordInput" required minlength="6" maxlength="30">
             </div>
 
             <div>
                 <label for="birthdayInput">Birth Date *</label>
-                <input type="date" id="birthdayInput" name="birthdayInput" required min="1900-01-01" max="2026-07-31">
+                <input type="date" class="textinputs" id="birthdayInput" name="birthdayInput" required min="1900-01-01" max="2026-07-31">
             </div>
 
             <div>
@@ -69,20 +69,20 @@
                     <label for="other">Other</label>
                 </fieldset>
             </div>
-            
+
             <div>
                 <label for="phoneInput">Phone Number</label>
-                <input type="tel" id="phoneInput" name="phoneInput" placeholder="079 754 83 91">
+                <input type="tel" class="textinputs" id="phoneInput" name="phoneInput" placeholder="079 754 83 91">
             </div>
 
             <div>
                 <label for="bioInput">Biography</label>
-                <textarea id="bioInput" name="bioInput" placeholder="Hello! I am John Doe, welcome to my profile!..." maxlength="200" rows="5" cols="33"></textarea>
+                <textarea id="bioInput" class="textinputs" name="bioInput" placeholder="Hello! I am John Doe, welcome to my profile!..." maxlength="200" rows="5" cols="33"></textarea>
             </div>
 
             <div>
                 <label for="countryInput">Country</label>
-                <select name="countryInput" id="countryInput">
+                <select name="countryInput" class="textinputs" id="countryInput">
                     <option disabled selected value="">--Select--</option>
                     <option value="switzerland">Switzerland</option>
                     <option value="france">France</option>
@@ -103,12 +103,12 @@
 
             <div>
                 <label for="discordInput">Discord</label>
-                <input type="url" name="discordInput" id="discordInput" placeholder="https://discord.com/users/account_id" pattern="https://.*discord\.com/users/.*">
+                <input type="url" class="textinputs" name="discordInput" id="discordInput" placeholder="https://discord.com/users/account_id" pattern="https://.*discord\.com/users/.*">
             </div>
 
             <div>
                 <label for="youtubeInput">Youtube (not available yet)</label>
-                <input type="url" name="youtubeInput" id="youtubeInput" placeholder="https://youtube.com/username" pattern="https://.*youtube.com/.*" readonly>
+                <input type="url" class="textinputs" name="youtubeInput" id="youtubeInput" placeholder="https://youtube.com/username" pattern="https://.*youtube.com/.*" readonly>
             </div>
 
             <div class="flexRow">
@@ -123,7 +123,7 @@
             <div>
                 <img id="captchaImg" src="../images/captcha.png" alt="captcha">
                 <label for="captchaInput">Please input the captcha here *</label>
-                <input name="captchaInput" id="captchaInput" type="text" pattern="CAPTCHA" required>
+                <input name="captchaInput" class="textinputs" id="captchaInput" type="text" pattern="CAPTCHA" required>
             </div>
 
             <div class="flexRow">

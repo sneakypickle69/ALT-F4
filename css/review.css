@@ -11,7 +11,7 @@
 }
 
 .reviewbody {
-    width: 40%;
+    max-width: 40%;
     margin: 0 auto;
 }
 
@@ -19,4 +19,31 @@
     text-decoration: underline;
     text-align: center;
     margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .reviewbody {
+        max-width: 65%;
+    }
+    .image img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .reviewbody {
+        max-width: 75%;
+    }
+    .image img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .reviewbody {
+        max-width: 95%;
+    }
+    .image img {
+        width: 99%;
+    }
 }
